@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <title>Loop</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="w3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="icon" href="greenlogo.svg" />
+
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Nunito", sans-serif;
+    }
+
+    body,
+    html {
+      height: 100%;
+      line-height: 1.8;
+    }
+
+    /* Full height image header */
+    .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("/w3images/mac.jpg");
+      min-height: 100%;
+    }
+
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
+  </style>
+  <body>
+    <body style="background-color: white"></body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="index.html" class="w3-bar-item w3-button"
+          ><img src="greenlogo.svg" alt="Loop Logo " width="150" height="58"
+        /></a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+          <a href="index.html" class="w3-bar-item w3-button w3-padding-32">Game</a>
+          <a href="explore.html" class="w3-bar-item w3-button w3-padding-32">Explore</a>
+          <a href="about.html" class="w3-bar-item w3-button w3-padding-32 w3-green">About</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+      style="display: none"
+      id="mySidebar"
+    >
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+      <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Gmae</a>
+      <a href="explore.html" onclick="w3_close()" class="w3-bar-item w3-button">Explore</a>
+      <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+    </nav>
+
+    <!-- Meet The Team -->
+    <div class="w3-container" style="background: white; margin: 0px 0px 50px 0px; padding: 128px 16px" id="extinction">
+      <h1 style="font-weight: bold; margin: 0px 400px 50px 400px">Meet the Team</h1>
+      <p style="font-weight: bold; margin: 0px 400px 0px 400px">
+        Loop was created by a team of UI/UX designers at the UC Berkeley School of Information. This project was developed as part
+        of capstone work for the Master of Information Management and Systems program.
+      </p>
+      <div class="w3-row-padding" style="margin: 50px 250px 25px 250px">
+        <div class="w3-quarter w3-section">
+          <div class="w3-card w3-center" style="background-color: #ffdbcd; height: 300px">
+            <img
+              src="kimberly.png"
+              alt="Kimberly Hirsch"
+              style="width: 150px; height: 150px; border-radius: 50%; margin: 50px 0px 25px 0px"
+            />
+            <div class="w3-container">
+              <h3 style="color: black; font-weight: bold">Kimberly Hirsch</h3>
+            </div>
+          </div>
+        </div>
+        <div class="w3-quarter w3-section">
+          <div class="w3-card w3-center" style="background-color: #ffdbcd; height: 300px">
+            <img
+              src="esther.jpg"
+              alt="Esther Jan"
+              style="width: 150px; height: 150px; border-radius: 50%; margin: 50px 0px 25px 0px"
+            />
+            <div class="w3-container">
+              <h3 style="color: black; font-weight: bold">Esther Jan</h3>
+            </div>
+          </div>
+        </div>
+        <div class="w3-quarter w3-section">
+          <div class="w3-card w3-center" style="background-color: #ffdbcd; height: 300px">
+            <img
+              src="michelle.jpg"
+              alt="Michelle Hwang"
+              style="width: 150px; height: 150px; border-radius: 50%; margin: 50px 0px 25px 0px"
+            />
+            <div class="w3-container">
+              <h3 style="color: black; font-weight: bold">Michelle Hwang</h3>
+            </div>
+          </div>
+        </div>
+        <div class="w3-quarter w3-section">
+          <div class="w3-card w3-center" style="background-color: #ffdbcd; height: 300px">
+            <img
+              src="bowen.JPG"
+              alt="Bowen Wei"
+              style="width: 150px; height: 150px; border-radius: 50%; margin: 50px 0px 25px 0px"
+            />
+            <div class="w3-container">
+              <h3 style="color: black; font-weight: bold">Bowen Wei</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h1 style="font-weight: bold; margin: 50px 400px 25px 400px">About Loop</h1>
+      <p style="font-weight: bold; margin: 0px 400px 0px 400px">
+        Loop is an educational and interactive gaming experience for children to learn about endangered species and natural
+        balance. With this project, we intend to engage the younger generation in the wildlife conservation movement by raising
+        knowledge around issues faced by endangered species and habitats, as well as current conservation efforts, with hopes to
+        inspire the environmental stewards of tomorrow. We focus on 3 main aspects in our interactive game:<br /><br />
+      </p>
+      <ol style="font-weight: bold; margin: 0px 400px 0px 400px">
+        <li><b>Creative:</b> Foster children's creativity to design their own creatures in the game.</li>
+        <li>
+          <b>Interactive:</b> Interaction with different physical blocks in the game promotes systematic thinking and advocates
+          for harmony between humans and nature.
+        </li>
+        <li><b>Collaborative:</b> Encourage children to play and work together to build a balanced and harmonious world.</li>
+      </ol>
+
+      <!-- Deliverables -->
+      <h1 style="font-weight: bold; margin: 50px 400px 0px 400px">Capstone Deliverables</h1>
+      <div class="w3-row-padding" style="margin: 50px 250px 0px 250px">
+        <div class="w3-third w3-section">
+          <div class="w3-card w3-center" style="background-color: #c6d1ff; height: 250px">
+            <div class="w3-container">
+              <h3 style="color: black; font-weight: bold; margin: 50px 0px 25px 0px"><a href="">Report</a></h3>
+              <p>Read about our goals, inspirations and design process, as well what the future of Loop may look like.</p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-third w3-section">
+          <div class="w3-card w3-center" style="background-color: #c6d1ff; height: 250px">
+            <div class="w3-container">
+              <h3 style="color: black; font-weight: bold; margin: 50px 0px 25px 0px">
+                <a href="https://youtu.be/0oX8VqiCzV0">Video</a>
+              </h3>
+              <p>Learn about our mission and see Loop in action!</p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-third w3-section">
+          <div class="w3-card w3-center" style="background-color: #c6d1ff; height: 250px">
+            <div class="w3-container">
+              <h3 style="color: black; font-weight: bold; margin: 50px 0px 25px 0px"><a href="">Slide Deck</a></h3>
+              <p>Take a high level look at the goals and processes followed while developing Loop.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-64" style="background: #183acc">
+  <div class="w3-half"  style="background: #183acc">
+      <div class="w3-center">
+        <a href="index.html" class="w3-button"><img src="greenlogo2.svg" alt="Loop Logo " width="200" height="100"></a>
+        <a href="https://www.ischool.berkeley.edu/" class="w3-button"><img src="berkeleyischool-logo-white.svg" alt="ISchool Logo " width="200" height="100"></a>
+      </div>
+  </div>
+  
+  <div class="w3-half"  style="background: #183acc">
+      <a href="index.html" class="w3-button"><img src="cc.svg" alt="Creative Commons Logo" width="100" height="50"></a>
+      <p style="color: white;">Content on this website is licensed under a Creative Commons<br>Attribution-NonCommercial-ShareAlike 4.0 International License.</p>
+</div>
+
+<p style="color: white;">&#169; Loop 2021</p>
+</footer>
+
+    <script>
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+
+      function openCity(cityName, elmnt, color) {
+        // Hide all elements with class="tabcontent" by default */
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        // Remove the background color of all tablinks/buttons
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+        }
+
+        // Show the specific tab content
+        document.getElementById(cityName).style.display = "block";
+
+        // Add the specific color to the button used to open the tab content
+        elmnt.style.backgroundColor = color;
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<title>Loop</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="greenlogo.svg"/>
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Nunito', sans-serif;}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/mac.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+  <body style="background-color: white;"></body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button"><img src="greenlogo.svg" alt="Loop Logo " width="150" height="58"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-32 w3-green">Game</a>
+      <a href="explore.html" class="w3-bar-item w3-button w3-padding-32">Explore</a>
+      <a href="about.html" class="w3-bar-item w3-button w3-padding-32">About</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+      style="display: none"
+      id="mySidebar"
+    >
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+      <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Gmae</a>
+      <a href="explore.html" onclick="w3_close()" class="w3-bar-item w3-button">Explore</a>
+      <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+    </nav>
+
+
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width: 100%;" id="home">
+ <!-- <video width="100%" height="600" controls autoplay>
+    <source src="New Loopville.mov" type="video/mp4">
+  </video> -->
+
+  <iframe width="100%" height="900" src="https://www.youtube.com/embed/0oX8VqiCzV0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+  <div class="w3-display-middle w3-margin-top w3-center"><b><br><br><br><br><br>
+    <h1 class="w3-xxlarge"><span class="w3-padding w3-black w3-opacity-min">Welcome to Loopville</b></span></h1>
+  </div>
+</header>
+
+<!-- Activities Section -->
+<div style="background: #c6d1ff;">
+<div class="w3-container" style="background: #c6d1ff; margin:0px 0px 50px 0px;" id="extinction">
+  <h3 class="w3-center" style="margin:50px 400px 25px 400px;">L∞P is an educational game designed for educational public institutes
+    to raise children’s awareness to the relationship between 
+   human and nature.</h3>
+
+  <div class="w3-row-padding" style="margin:0px 250px 25px 250px;">
+    <div class="w3-third w3-section">
+      <div class="w3-card w3-center" style="background-color: #f4f4f4; height: 450px;">
+        <img src="Creative.gif" alt="Creature" style="width: 50%;  margin:50px 0px 25px 0px;">
+        <div class="w3-container">
+          <h3 style="color: black; font-weight: bold;">Creative</h3>
+          <p>Children are encouraged to create an interactive creature in the virtual environment of Loopville.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-third w3-section">
+      <div class="w3-card w3-center" style="background-color: #f4f4f4; height: 450px;">
+        <img src="Interactive.gif" alt="Creature" style="width: 50%;  margin:50px 0px 25px 0px;">
+        <div class="w3-container">
+          <h3 style="color: black; font-weight: bold;">Interactive</h3>
+          <p>Children can move physical wooden blocks that represent natural and man-made structures around Loopville to see how these elements impact the balance of the ecosystem.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-third w3-section">
+      <div class="w3-card w3-center" style="background-color: #f4f4f4; height: 450px;">
+        <img src="Collaborative.gif" alt="Two Creatures" style="width: 50%;  margin:50px 0px 35px 0px;">
+        <div class="w3-container">
+          <h3 style="color: black; font-weight: bold;">Collaborative</h3>
+          <p>Children have the option of working collaboratively to experiment with balance within Loopville.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Our Mission -->
+<div class="w3-container" style="height: 600px;">
+  <div class="w3-row-padding" style="margin:0px 250px 25px 250px;">
+    <div class="w3-half w3-section">
+      <div  style="height: 300px;">
+        <div class="w3-container" style=" margin:0px 0px 0px 0px;"> 
+          <h3 style="color: black; font-weight: bold;">Our Mission</h3>
+          <p>We believe it is equally important for young children to learn about the interconnectedness of the ecosystem we live in and how our actions impact animals, as other subjects currently included in their school curriculum. For 5-8 years old children, they learn about different species of animals and their habitats in school, but they are not exposed to the broader implications of how the two worlds of animals and humans connect and influence one another until much later on in their education.
+
+            <br><br>We hope that Loop can inspire children to start thinking about what living in harmony with nature means at a young age, and carry the same conscientiousness about how their daily actions impact the environment as they grow up.
+            <p><a href="explore.html" class="w3-button" style="background-color: #183acc; color: white; border-radius: 12px; margin: 25px 0px 0px 0px;">Learn More</a></p>
+          </div>
+      </div>
+    </div>
+    <div class="w3-half w3-section">
+      <div class="w3-center" style="height: 300px;">
+        <img src="Earth illo.svg" alt="Earth with Loop logo" style="width: 80%; margin: 25px 0px 25px 0px;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Learn Through Playing -->
+<div class="w3-white" style="height: 500px;">
+  <div class="w3-row-padding" style="margin:0px 250px 25px 250px;">
+    <div class="w3-half w3-section">
+      <div class="w3-center" style="height: 300px;">
+        <img src="Rectangle 89.svg" alt="Child playing with Loop" style="width: 80%;  margin:50px 0px 25px 0px;">
+      </div>
+    </div>
+    <div class="w3-half w3-section">
+      <div  style="height: 300px;">
+        <div class="w3-container" style=" margin:50px 0px 25px 0px;"> 
+          <h3 style="color: black; font-weight: bold;">Learn Through Playing</h3>
+          <h1 style="color: black; font-weight: bold;">Loop - an immersive game</h1>
+          <p>Designed to be a set as a part of an exhibition under the theme of environmental conservation and wildlife preservation, we designed Loop to be a stand-alone installation that invites children to the world of Loopville.</p>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h1 style="text-align:center; color: black; font-weight: bold;">Loop Prototype</h1>
+
+<div class="container" style="background-color: black;">
+  <div class="mySlides w3-center">
+    <div class="numbertext">1 / 12</div>
+    <img src="img10.jpg" style="width:100%;  height: 450px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 12</div>
+    <img src="img2.jpg" style="width:100%;  height: 450px;">
+  </div>
+
+  <div class="mySlides w3-center">
+    <div class="numbertext">3 / 12</div>
+    <img src="img3.jpg" style="width: 40%; height: 450px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 12</div>
+    <img src="img4.jpg" style="width:100%;  height: 450px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 12</div>
+    <img src="img5.jpg" style="width:100%;  height: 450px;">
+  </div>
+    
+  <div class="mySlides w3-center">
+    <div class="numbertext">6 / 12</div>
+    <img src="img6.jpg" style="width: 40%; height: 450px;">
+  </div>
+
+  <div class="mySlides w3-center">
+    <div class="numbertext">7 / 12</div>
+    <img src="img1.jpg" style="width: 40%; height: 450px;">
+  </div>
+
+  <div class="mySlides w3-center">
+    <div class="numbertext">8 / 12</div>
+    <img src="img7.jpg" style="width: 40%; height: 450px;">
+  </div>
+
+  <div class="mySlides w3-center">
+    <div class="numbertext">9 / 12</div>
+    <img src="img8.jpg" style="width:100%;  height: 450px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">10 / 12</div>
+    <img src="img9.jpg" style="width:100%;  height: 450px;">
+  </div>
+
+  <div class="mySlides w3-center">
+    <div class="numbertext">11 / 12</div>
+    <img src="img12.jpg" style="width: 40%; height: 450px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">12 / 12</div>
+    <img src="img11.jpg" style="width:100%;  height: 450px;">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container" style="border: none;">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column w3-center">
+      <img class="demo cursor" src="img10.jpg" style="height: 60px; width: 100%;" onclick="currentSlide(1)" alt="A House Block in Loopville">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img2.jpg" style="height: 60px; width: 100%;" onclick="currentSlide(2)" alt="Playing With a House Block">
+    </div>
+    <div class="column w3-center">
+      <img class="demo cursor" src="img3.jpg" style="height: 60px" onclick="currentSlide(3)" alt="Creature Creation on IPad">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img4.jpg" style="height: 60px; width: 100%;" onclick="currentSlide(4)" alt="A House Block in Loopville">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img5.jpg" style="height: 60px; width: 100%;" onclick="currentSlide(5)" alt="Running Around Loopville">
+    </div>    
+    <div class="column w3-center">
+      <img class="demo cursor" src="img6.jpg" style="height: 60px" onclick="currentSlide(6)" alt="Creature Passports">
+    </div>
+    <div class="column w3-center">
+      <img class="demo cursor" src="img1.jpg" style="height: 60px;" onclick="currentSlide(7)" alt="Catching a Creature">
+    </div>
+    <div class="column w3-center">
+      <img class="demo cursor" src="img7.jpg" style="height: 60px;" onclick="currentSlide(8)" alt="Playing in Loopville">
+    </div>
+    <div class="column w3-center">
+      <img class="demo cursor" src="img8.jpg" style="height: 60px; width: 100%;" onclick="currentSlide(9)" alt="Playing with a House Block">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img9.jpg" style="height: 60px; width: 100%;" onclick="currentSlide(10)" alt="Playing with a House Block">
+    </div>
+    <div class="column w3-center">
+      <img class="demo cursor" src="img12.jpg" style="height: 60px;" onclick="currentSlide(11)" alt="House Blocks in Loopville">
+    </div>    
+    <div class="column w3-center">
+      <img class="demo cursor" src="img11.jpg" style="height: 60px; width: 100%;" onclick="currentSlide(12)" alt="Factory Block">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+<!-- An Experience to Last -->
+  <div class="w3-row-padding" style="height: 500px; margin:50px 250px 0px 250px;">
+    <div class="w3-half w3-section">
+      <div class="w3-center" style="height: 300px;">
+        <img src="Passport.svg" alt="Creature Passport" style="width: 90%; border-radius: 10%; margin: 100px 0px 0px 10px;">
+      </div>
+    </div>
+    <div class="w3-half w3-section">
+      <div  style="height: 300px;">
+        <div class="w3-container" style=" margin:50px 0px 0px 0px;"> 
+          <h3 style="color: black; font-weight: bold;">An experience to last</h3>
+          <h1 style="color: black; font-weight: bold;">Seamless experience<br>across all platforms</h1>
+          <p>Transition from physical visit of Loopville to our website and mobile application is made seamless. Loop presents a learning experience that extends from the in-person installation to individual homes where children can explore with their parents about the topics of extinction and balance.</p>
+          </div>
+      </div>
+    </div>
+  </div>
+
+<!-- A Daily Practice -->
+  <div class="w3-row-padding" style="height: 600px; margin:0px 250px 25px 250px;">
+    <div class="w3-half w3-section">
+      <div class="w3-center" style="height: 300px;">
+        <img src="computer screen 1.svg" alt="Compost" style="width: 100%; margin:100px 0px 25px 0px;">
+      </div>
+    </div>
+    <div class="w3-half w3-section">
+      <div  style="height: 300px;">
+        <div class="w3-container" style=" margin:50px 0px 25px 0px;"> 
+          <h3 style="color: black; font-weight: bold;">A daily practice</h3>
+          <h1 style="color: black; font-weight: bold;">Guidelines to an<br>eco-friendly lifestyle</h1>
+          <p>Our website includes articles and guidelines with at-home activities that parents and children can learn about. This aims to fill a void about the resources on wildlife conservation in the current curriculum for young children. <br><br></p>
+            <p><a href="explore.html" class="w3-button" style="background-color: #183acc; border-radius: 12px; color: white;">Learn More</a></p>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Multi-Platform -->
+<header class="w3-display-container w3-content w3-wide" style="max-width: 100%;" id="home">
+  <img class="w3-image" src="Cross Platforms.svg" alt="Loop on IPad and Laptop" width="100%" height="600">
+</header>
+
+<!-- About Us Plug -->
+<div class="w3-container w3-center" style="background: white; margin: 100px 400px 100px 400px;" id="extinction">
+  <h1 style="font-weight: bold; margin:0px 0px 25px 0px;">Thank you for visiting!</h1>
+  <p style="margin:0px 0px 0px 0px;">L∞P is a conceptual project created by students 
+    from the<br>UC Berkeley Master of Information Management and Systems in 2021.
+    
+    <br><br>Learn more about our team</p>
+    <p><a href="about.html" class="w3-button w3-center" style="background-color: #183acc; border-radius: 12px; color: white;">About Us</a></p>
+
+    
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-64" style="background: #183acc">
+  <div class="w3-half"  style="background: #183acc">
+      <div class="w3-center">
+        <a href="index.html" class="w3-button"><img src="greenlogo2.svg" alt="Loop Logo " width="200" height="100"></a>
+        <a href="https://www.ischool.berkeley.edu/" class="w3-button"><img src="berkeleyischool-logo-white.svg" alt="ISchool Logo " width="200" height="100"></a>
+      </div>
+  </div>
+  
+  <div class="w3-half"  style="background: #183acc">
+      <a href="index.html" class="w3-button"><img src="cc.svg" alt="Creative Commons Logo" width="100" height="50"></a>
+      <p style="color: white;">Content on this website is licensed under a Creative Commons<br>Attribution-NonCommercial-ShareAlike 4.0 International License.</p>
+</div>
+
+<p style="color: white;">&#169; Loop 2021</p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+function openCity(cityName, elmnt, color) {
+  // Hide all elements with class="tabcontent" by default */
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Remove the background color of all tablinks/buttons
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  // Show the specific tab content
+  document.getElementById(cityName).style.display = "block";
+
+  // Add the specific color to the button used to open the tab content
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+
+</script>
+
+</body>
+</html>

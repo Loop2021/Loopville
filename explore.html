@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+  <title>Loop</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="w3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="icon" href="greenlogo.svg" />
+
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Nunito", sans-serif;
+    }
+
+    body,
+    html {
+      height: 100%;
+      line-height: 1.8;
+    }
+
+    /* Full height image header */
+    .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("/w3images/mac.jpg");
+      min-height: 100%;
+    }
+
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
+  </style>
+  <body>
+    <body style="background-color: white"></body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="index.html" class="w3-bar-item w3-button"
+          ><img src="greenlogo.svg" alt="Loop Logo " width="150" height="58"
+        /></a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+          <a href="index.html" class="w3-bar-item w3-button w3-padding-32">Game</a>
+          <a href="explore.html" class="w3-bar-item w3-button w3-padding-32 w3-green">Explore</a>
+          <a href="about.html" class="w3-bar-item w3-button w3-padding-32">About</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+      style="display: none"
+      id="mySidebar"
+    >
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+      <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Gmae</a>
+      <a href="explore.html" onclick="w3_close()" class="w3-bar-item w3-button">Explore</a>
+      <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+    </nav>
+
+    <!-- Map Section -->
+    <div class="w3-container w3-margin-left" style="padding: 128px 16px" id="home">
+      <h1 style="font-weight: bold; margin: 0px 400px 50px 400px">Do you know that animals<br />and plants are disappearing?</h1>
+      <p style="font-weight: bold; margin: 0px 400px 0px 400px">
+        Many animals around the world are at risk of becoming endangered. According to the International Union for Conservation of
+        Nature (IUCN), there are now 41,415 species -- including both animals and plants -- on the IUCN Red List, the world’s most
+        comprehensive inventory of the global conservation status of biological species. 16,306 of them are at risk of extinction.
+        <br /><br />
+        Explore the map to learn more about the wildlife statuses around the world and how you and your children can do to help!
+      </p>
+      <div class="w3-center" style="margin-top: 5%">
+        <iframe
+          src="https://public.tableau.com/views/InfovizOverview/ofthreatenedanimalsbycountry?:showVizHome=no&:embed=true"
+          width="50%"
+          height="600"
+          frameborder="0"
+        ></iframe>
+      </div>
+
+      <p style="font-weight: bold; margin: 50px 400px 50px 400px">
+        The world map above shows the number of species listed as Threatened (EW, CR, EN, VU) on the IUCN Red List by country.
+        Hover over each country to see details about endangered animals there, and learn more about the most critically endangered
+        animals identified in the World Wildlife Fund species directory.
+      </p>
+
+      <!-- Map Section -->
+      <h1 style="font-weight: bold; margin: 0px 400px 25px 400px">
+        Which country ranked the highest with threatened and extinct species?
+      </h1>
+      <p style="font-weight: bold; margin: 0px 400px 0px 400px">
+        Is your country shown in red or orange on the worldmap above?<br />
+        The IUCN Red List categorized the status of wildlife conservation into eight degrees.
+      </p>
+      <img class="w3-center" src="status.svg" alt="IUCN Red List Catgories" style="width: 20%; margin: 25px 400px 25px 400px" />
+      <p style="font-weight: bold; margin: 0px 400px 0px 400px">
+        We’ve consolidated the above statuses into three main categories: Extinct, Threatened, and Lower Risk.<br /><br />The bar
+        graph below ranks each country by number of threatened and extinct species, from highest to lowest.
+      </p>
+      <div class="w3-center" style="margin-top: 5%">
+        <iframe
+          src="https://public.tableau.com/views/NumberofThreatenedandExtinctSpeciesbyCountry/ofthreatenedandextinctspecieslisted2?:showVizHome=no&:embed=true"
+          width="80%"
+          height="500px"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </div>
+      <p style="font-weight: bold; margin: 50px 400px 100px 400px">
+        The top 5 countries with the largest amount of threatened and extinct species are the United States, Indonesia, Australia,
+        Mexico, and Madagascar, in the order of ranking. These 5 countries have an average number of 948 threatened species, and
+        66 extinct species. Even though Indonesia has the highest number (1,171) of threatened species, the United States has ~80
+        times more species that went extinct.
+        <br /><br />Hover over the bar graph to see the total number of extinct and threatened species across each country listed.
+        Can you find information from your own country on the list?
+      </p>
+
+      <!-- Map Section -->
+      <h1 style="font-weight: bold; margin: 0px 400px 25px 400px">A closer look at the composition</h1>
+      <p style="font-weight: bold; margin: 0px 400px 0px 400px">
+        The United States has a total of 1,347 animal species listed on the Red List. Let’s break down the number into percentages
+        and take a closer look to understand the composition of threatened species by taxonomic groups.
+      </p>
+      <div class="w3-center" style="margin-top: 5%">
+        <iframe
+          src="https://public.tableau.com/views/Top5CountrieswithThreatenedSpecies/Top5CountriesWithThreatenedSpecies?:showVizHome=no&:embed=true"
+          width="80%"
+          height="500px"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </div>
+      <p style="font-weight: bold; margin: 50px 400px 0px 400px">
+        When we talk about wildlife conservation, we usually think about more commonly known animals, such as polar bears and
+        rhinos. However, from the pie chart above, “Plants” actually accounts for the majority of the threatened species, whereas
+        “Mammal” took up about 5% in the top 5 countries listed.
+        <br /><br />
+        Regardless, both animals and the plants are in desperate need of our protection. Now that you understood the problem
+        animals around the world are currently facing, let's dig deeper into the main threats endangering animals.
+      </p>
+    </div>
+
+    <!-- Tab Section -->
+    <div class="w3-container" style="background: #f4f4f4" id="causes">
+      <h3 class="w3-center" style="margin: 25px 0px 25px 0px"><u>Reasons</u></h3>
+      <h1 style="font-weight: bold; margin: 25px 400px 25px 400px">Learn more about the main threats endangering animals</h1>
+      <p style="font-weight: bold; margin: 0px 400px 50px 400px">
+        In this session, we will focus on explaining how humans are threatening animals’ existence in three major ways: climate
+        change, poaching, habitat loss. Click on each card to learn more about how these threats are affecting the animals.
+      </p>
+
+      <div class="w3-center" style="width: 1200px; height: 850px; overflow: hidden">
+        <iframe
+          class="w3-center"
+          style="border: none; position: relative; bottom: 250px; left: 12%; right: 20%"
+          width="900"
+          height="1300"
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FYPRMtKmGmpjIpkLtMWyY5w%2FUntitled%3Fnode-id%3D1%253A257%26scaling%3Dscale-down%26page-id%3D0%253A1%26hotspot-hints%3D0"
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- 3 Animals Section -->
+    <div class="w3-container" style="margin-bottom: 25px" id="animals">
+      <h3 class="w3-center" style="margin: 25px 0px 25px 0px"><u>More Stories</u></h3>
+      <h1 style="font-weight: bold; margin: 25px 400px 25px 400px">Learn more about<br />endangered animal's stories</h1>
+      <p style="font-weight: bold; margin: 0px 400px 0px 400px">
+        In this session, we would like to further explore the detailed stories of these three animals, which are threatened for
+        the reasons mentioned above. Hover over the cards to learn more about these stories. Let's see how we can help them!
+      </p>
+      <div class="w3-row-padding" style="margin: 50px 250px 25px 250px">
+        <div class="w3-third w3-section">
+          <div class="flip-card w3-center">
+            <div class="flip-card-inner">
+              <div
+                class="flip-card-front"
+                style="background-image: url('Orangutan.png'); background-repeat: no-repeat; background-size: 100% 400px"
+              >
+                <h2 class="w3-center" style="font-weight: bold; color: white; margin: 300px 0px 0px 0px">Orangutan</h2>
+              </div>
+              <div
+                class="flip-card-back"
+                style="background-image: url('oinfo.svg'); background-repeat: no-repeat; background-size: 100% 400px"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div class="w3-third w3-section">
+          <div class="flip-card w3-center">
+            <div class="flip-card-inner">
+              <div
+                class="flip-card-front"
+                style="background-image: url('Leopard.png'); background-repeat: no-repeat; background-size: 100% 400px"
+              >
+                <h2 class="w3-center" style="font-weight: bold; color: white; margin: 300px 0px 0px 0px">Armur Leopard</h2>
+              </div>
+              <div
+                class="flip-card-back"
+                style="background-image: url('linfo.svg'); background-repeat: no-repeat; background-size: 100% 400px"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div class="w3-third w3-section">
+          <div class="flip-card w3-center">
+            <div class="flip-card-inner">
+              <div
+                class="flip-card-front"
+                style="background-image: url('Turtle.png'); background-repeat: no-repeat; background-size: 100% 400px"
+              >
+                <h2 class="w3-center" style="font-weight: bold; color: white; margin: 300px 0px 0px 0px">Leatherback Turtle</h2>
+              </div>
+              <div
+                class="flip-card-back"
+                style="background-image: url('tinfo.svg'); background-repeat: no-repeat; background-size: 100% 400px"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p style="font-weight: bold; margin: 25px 400px 25px 400px">
+        Every one of us should protect these animals as much as possible. Preserve biodiversity and protect our planet.
+      </p>
+    </div>
+
+    <!-- Activities Section -->
+    <div class="w3-container" style="background: #c6d1ff" id="extinction">
+      <h3 class="w3-center" style="margin-top: 50px"><u>Activities</u></h3>
+      <p style="font-weight: bold; margin: 25px 400px 25px 400px">
+        When a species becomes endangered, it is a sign that the ecosystem is slowly falling apart. We know the statistics might
+        be depressing, but with the continuous effort and actions made by everyone, we can all make a difference in wildlife
+        conservation. <br /><br />
+        Do you want to take part in more actions to make a difference?<br />
+        Here are some at-home activities that we recommend you and your children to participate in!
+      </p>
+      <div class="w3-row-padding" style="margin: 50px 250px 25px 250px">
+        <div class="w3-third w3-section">
+          <div class="w3-center" style="height: 550px">
+            <img class="w3-margin-top" src="explore.svg" alt="Explore Animal Habitats" style="width: 300px" />
+            <div class="w3-container">
+              <h3 style="color: #183acc; font-weight: bold">
+                <a href="https://www.weareteachers.com/animal-habitats/">Explore Animal Habitats</a>
+              </h3>
+              <p>
+                Rainforests, deserts, and safaris...Learning about all the different habitats around the world can help children
+                understand the difference of species, and how animals can adapt and thrive.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-third w3-section">
+          <div class="w3-center" style="height: 550px">
+            <img class="w3-margin-top" src="compost.svg" alt="Compost" style="width: 300px" />
+            <div class="w3-container">
+              <h3 style="color: #183acc; font-weight: bold">
+                <a href="https://kidsforsavingearth.org/programs/eco/compost-power/">Compost Power</a>
+              </h3>
+              <p>Compost improves soil structure, recycles organic resources, and more importantly, reduces greenhouse gases!</p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-third w3-section">
+          <div class="w3-center" style="height: 550px">
+            <img class="w3-margin-top" src="feeder.svg" alt="Bird Feeder" style="width: 300px" />
+            <div class="w3-container">
+              <h3 style="color: #183acc; font-weight: bold">
+                <a href="https://www.wwf.org.uk/sites/default/files/2019-03/WWF_Apple_Feeder_Activity_Sheet_0.pdf"
+                  >Animal Bird Feeder</a
+                >
+              </h3>
+              <p>Make your backyard a bird-friendly environment so that birds can have a safe place to find food!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Activities Section -->
+    <div class="w3-container" id="extinction">
+      <h3 class="w3-center" style="margin-top: 50px"><u>Resource & References</u></h3>
+      <p class="w3-center" style="margin: 25px 400px 50px 400px">
+        IUCN Red List<br />
+        World Wildlife Fund<br />
+        Location by Kevin Feyder from the Noun Project<br />
+        "Walking Amur leopard cub" by Tambako the Jaguar is licensed under CC BY-ND 2.0<br />
+        "Head On I - Black Rhino" by Lawrence OP is licensed under CC BY-NC-ND 2.0<br />
+        "Bornean Orangutan portrait" by Jo@net is licensed under CC BY 2.0<br />
+        "File:Cross river gorilla.jpg" by arenddehaas at English Wikipedia is licensed under CC BY-SA 3.0<br />
+        "Eastern Lowland Gorilla (Amahoro)" by scara1984 is licensed under CC BY-NC-ND 2.0<br />
+        "Diving Maldives: Hawksbill Turtle (Eretmochelys imbricata)" by Mal B is licensed under CC BY-ND 2.0<br />
+        "Javan Rhino at Fort Worth Zoo" by Karl Heubaum is licensed under CC BY-NC-ND 2.0<br />
+        "Orangutan sitting in the grass" by Tambako the Jaguar is licensed under CC BY-ND 2.0<br />
+        "Saola" by Global Wildlife Conservation is licensed under CC BY 2.0<br />
+        "Sumatran elephant in Tesso Nilo National Park, Indonesia" by @NonprofitOrgs is licensed under CC BY 2.0<br />
+        "The Sumatran Orangutan (IMG_6581)" by Schristia is licensed under CC BY-SA 2.0<br />
+        "Rosa - Sumatran Rhino" by httsan is licensed under CC BY-NC-ND 2.0<br />
+        "National Zoo - Sumatran tiger" by wallyg is licensed under CC BY-NC-ND 2.0<br />
+        "Vaquita - 2008" by NOAA Fisheries West Coast is licensed under CC BY-NC-ND 2.0<br />
+        "Breakfast - Western lowland gorilla (Gorilla gorilla gorilla) - Paignton Zoo, Devon - May 2019" by Dis da fi we is
+        licensed under CC BY-NC-SA 2.0<br />
+        "Finless Porpoise" by kuribo is licensed under CC BY-SA 2.0<br />
+        "File:Pseudoryx nghetinhensis.PNG" by The original uploader was Silviculture at Vietnamese Wikipedia. is licensed under CC
+        BY-SA 3.0<br />
+        “Poaching” by Tima Miroshnichenko <br />
+        “Photo of Brown Bare Tree on Brown Surface during Daytime” by Pixabay<br />
+        “Person Standing Beside Body of Water” by Valdemaras D.<br />
+        Photo by Chris Charles on Unsplash<br />
+        Photo by Maurits Bausenhart on Unsplash<br />
+        Photo by David Troeger onUnsplash<br />
+        https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0218819<br />
+        https://www.worldwildlife.org/species/orangutan<br />
+        https://wwf.panda.org/discover/knowledge_hub/endangered_species/marine_turtles/leatherback_turtle/?<br />
+        https://www.fws.gov/northflorida/seaturtles/turtle%20factsheets/leatherback-sea-turtle.htm <br />
+        Photo by Sigmund on Unsplash<br />
+        Photo by Neslihan Gunaydin on Unsplash<br />
+        Photo by Forest Simon on Unsplash<br />
+      </p>
+    </div>
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-64" style="background: #183acc">
+  <div class="w3-half"  style="background: #183acc">
+      <div class="w3-center">
+        <a href="index.html" class="w3-button"><img src="greenlogo2.svg" alt="Loop Logo " width="200" height="100"></a>
+        <a href="https://www.ischool.berkeley.edu/" class="w3-button"><img src="berkeleyischool-logo-white.svg" alt="ISchool Logo " width="200" height="100"></a>
+      </div>
+  </div>
+  
+  <div class="w3-half"  style="background: #183acc">
+      <a href="index.html" class="w3-button"><img src="cc.svg" alt="Creative commons Logo" width="100" height="50"></a>
+      <p style="color: white;">Content on this website is licensed under a Creative Commons<br>Attribution-NonCommercial-ShareAlike 4.0 International License.</p>
+</div>
+
+<p style="color: white;">&#169; Loop 2021</p>
+</footer>
+
+    <script>
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+
+      function openCity(cityName, elmnt, color) {
+        // Hide all elements with class="tabcontent" by default */
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        // Remove the background color of all tablinks/buttons
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+        }
+
+        // Show the specific tab content
+        document.getElementById(cityName).style.display = "block";
+
+        // Add the specific color to the button used to open the tab content
+        elmnt.style.backgroundColor = color;
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+  </body>
+</html>
